@@ -18,11 +18,13 @@ export const renderer = jsxRenderer(({ children }) => {
               theme: {
                 extend: {
                   colors: {
-                    'leufu-primary': '#1e40af',
-                    'leufu-secondary': '#059669',
-                    'leufu-accent': '#f59e0b',
-                    'leufu-dark': '#1f2937',
-                    'leufu-light': '#f3f4f6'
+                    'leufu-primary': '#dc2626',
+                    'leufu-secondary': '#991b1b',
+                    'leufu-accent': '#ef4444',
+                    'leufu-dark': '#0a0a0a',
+                    'leufu-black': '#000000',
+                    'leufu-light': '#f3f4f6',
+                    'leufu-gray': '#1f1f1f'
                   },
                   fontFamily: {
                     'montserrat': ['Montserrat', 'sans-serif'],

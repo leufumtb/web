@@ -5,24 +5,25 @@ const app = new Hono()
 
 app.use(renderer)
 
-// Componente de Navegación
+// Componente de Navegación con logo oficial
 const Navigation = () => (
-  <nav class="nav-sticky bg-leufu-dark text-white shadow-lg" id="navbar">
-    <div class="container mx-auto px-4 py-4">
+  <nav class="nav-sticky bg-leufu-black text-white shadow-lg" id="navbar">
+    <div class="container mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
         <div class="flex items-center space-x-3">
-          <i class="fas fa-mountain text-leufu-accent text-3xl"></i>
+          <img src="/images/logo.png" alt="Leufu MTB Logo" class="h-16 w-16 object-contain" />
           <div>
             <h1 class="text-2xl font-montserrat font-bold">Leufu MTB</h1>
             <p class="text-xs text-gray-300">Lebu, Arauco - Chile</p>
           </div>
         </div>
         <div class="hidden md:flex space-x-6">
-          <a href="/" class="hover:text-leufu-accent font-medium">Inicio</a>
-          <a href="/nosotros" class="hover:text-leufu-accent font-medium">Nosotros</a>
-          <a href="#rutas" class="hover:text-leufu-accent font-medium">Rutas</a>
-          <a href="#eventos" class="hover:text-leufu-accent font-medium">Eventos</a>
-          <a href="#contacto" class="hover:text-leufu-accent font-medium">Contacto</a>
+          <a href="/" class="hover:text-leufu-accent font-medium transition-colors">Inicio</a>
+          <a href="/nosotros" class="hover:text-leufu-accent font-medium transition-colors">Nosotros</a>
+          <a href="/#rutas" class="hover:text-leufu-accent font-medium transition-colors">Rutas</a>
+          <a href="/#calendario" class="hover:text-leufu-accent font-medium transition-colors">Calendario</a>
+          <a href="/inscripcion" class="hover:text-leufu-accent font-medium transition-colors">Inscripción</a>
+          <a href="/#contacto" class="hover:text-leufu-accent font-medium transition-colors">Contacto</a>
         </div>
         <button class="md:hidden text-2xl">
           <i class="fas fa-bars"></i>
@@ -34,42 +35,43 @@ const Navigation = () => (
 
 // Componente Footer
 const Footer = () => (
-  <footer class="bg-leufu-dark text-white py-12">
+  <footer class="bg-leufu-black text-white py-12">
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center space-x-3 mb-4">
-            <i class="fas fa-mountain text-leufu-accent text-3xl"></i>
+            <img src="/images/logo.png" alt="Leufu MTB" class="h-12 w-12" />
             <h3 class="text-2xl font-montserrat font-bold">Leufu MTB</h3>
           </div>
           <p class="text-gray-300 mb-4">
             Donde el río, el mar y la montaña se unen pedaleando.
           </p>
           <div class="flex space-x-4">
-            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="text-2xl hover:text-leufu-accent">
+            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="text-2xl hover:text-leufu-accent transition-colors">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/clubleufumtb" target="_blank" class="text-2xl hover:text-leufu-accent">
+            <a href="https://www.facebook.com/clubleufumtb" target="_blank" class="text-2xl hover:text-leufu-accent transition-colors">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="mailto:contacto@leufumtb.cl" class="text-2xl hover:text-leufu-accent">
+            <a href="mailto:contacto@leufumtb.cl" class="text-2xl hover:text-leufu-accent transition-colors">
               <i class="fas fa-envelope"></i>
             </a>
           </div>
         </div>
         
         <div>
-          <h4 class="text-xl font-montserrat font-bold mb-4">Enlaces Rápidos</h4>
+          <h4 class="text-xl font-montserrat font-bold mb-4 text-leufu-accent">Enlaces Rápidos</h4>
           <ul class="space-y-2">
-            <li><a href="/" class="text-gray-300 hover:text-leufu-accent">Inicio</a></li>
-            <li><a href="/nosotros" class="text-gray-300 hover:text-leufu-accent">Nosotros</a></li>
-            <li><a href="#rutas" class="text-gray-300 hover:text-leufu-accent">Rutas</a></li>
-            <li><a href="#eventos" class="text-gray-300 hover:text-leufu-accent">Eventos</a></li>
+            <li><a href="/" class="text-gray-300 hover:text-leufu-accent transition-colors">Inicio</a></li>
+            <li><a href="/nosotros" class="text-gray-300 hover:text-leufu-accent transition-colors">Nosotros</a></li>
+            <li><a href="/#rutas" class="text-gray-300 hover:text-leufu-accent transition-colors">Rutas</a></li>
+            <li><a href="/#calendario" class="text-gray-300 hover:text-leufu-accent transition-colors">Calendario</a></li>
+            <li><a href="/inscripcion" class="text-gray-300 hover:text-leufu-accent transition-colors">Inscripción</a></li>
           </ul>
         </div>
         
         <div>
-          <h4 class="text-xl font-montserrat font-bold mb-4">Contacto</h4>
+          <h4 class="text-xl font-montserrat font-bold mb-4 text-leufu-accent">Contacto</h4>
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-center space-x-2">
               <i class="fas fa-map-marker-alt text-leufu-accent"></i>
@@ -89,7 +91,7 @@ const Footer = () => (
       
       <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
         <p>&copy; 2024 Leufu MTB. Todos los derechos reservados.</p>
-        <p class="text-sm mt-2">Hecho con <i class="fas fa-heart text-red-500"></i> en Lebu, Chile</p>
+        <p class="text-sm mt-2">Hecho con <i class="fas fa-heart text-leufu-accent"></i> en Lebu, Chile</p>
       </div>
     </div>
   </footer>
@@ -105,6 +107,7 @@ app.get('/', (c) => {
       <section class="hero-parallax relative h-screen flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?q=80&w=2070');">
         <div class="hero-overlay absolute inset-0"></div>
         <div class="relative z-10 text-center px-4 animate-fadeInUp">
+          <img src="/images/logo.png" alt="Leufu MTB" class="mx-auto mb-6 h-32 w-32 animate-fadeIn" />
           <h1 class="text-5xl md:text-7xl font-montserrat font-bold mb-6">
             Leufu MTB
           </h1>
@@ -115,8 +118,8 @@ app.get('/', (c) => {
             Club de Ciclismo - Lebu, Arauco, Chile
           </p>
           <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="/nosotros" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block">
-              <i class="fas fa-users mr-2"></i>
+            <a href="/inscripcion" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block text-white">
+              <i class="fas fa-user-plus mr-2"></i>
               Únete al Club
             </a>
             <a href="#rutas" class="bg-white text-leufu-primary px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100">
@@ -133,7 +136,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Contador de Estadísticas */}
-      <section class="py-16 bg-gradient-to-r from-leufu-primary to-leufu-secondary text-white">
+      <section class="py-16 bg-gradient-to-r from-leufu-black via-leufu-primary to-leufu-black text-white">
         <div class="container mx-auto px-4">
           <div class="grid md:grid-cols-4 gap-8 text-center">
             <div class="animate-fadeInUp">
@@ -160,7 +163,7 @@ app.get('/', (c) => {
       <section id="valores" class="py-20 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16 animate-fadeInUp">
-            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-dark mb-4">
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-black mb-4">
               Nuestros Valores
             </h2>
             <div class="section-divider mb-6"></div>
@@ -170,33 +173,33 @@ app.get('/', (c) => {
           </div>
 
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg text-center">
-              <div class="bg-leufu-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="card-hover bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg text-center border-2 border-leufu-accent">
+              <div class="bg-leufu-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                 <i class="fas fa-handshake text-4xl"></i>
               </div>
-              <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-4">Amistad</h3>
+              <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">Amistad</h3>
               <p class="text-gray-700 leading-relaxed">
                 Creamos vínculos genuinos más allá del ciclismo. Cada ruta es una oportunidad para conocernos, 
                 apoyarnos y construir una familia sobre ruedas.
               </p>
             </div>
 
-            <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg text-center">
-              <div class="bg-leufu-secondary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="card-hover bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl shadow-lg text-center border-2 border-leufu-black">
+              <div class="bg-leufu-black text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                 <i class="fas fa-trophy text-4xl"></i>
               </div>
-              <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-4">Superación</h3>
+              <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">Superación</h3>
               <p class="text-gray-700 leading-relaxed">
                 Cada subida es un desafío, cada kilómetro una victoria personal. Te acompañamos a superar 
                 tus límites y alcanzar metas que nunca imaginaste.
               </p>
             </div>
 
-            <div class="card-hover bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-2xl shadow-lg text-center">
-              <div class="bg-leufu-accent text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="card-hover bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg text-center border-2 border-leufu-accent">
+              <div class="bg-leufu-secondary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                 <i class="fas fa-medal text-4xl"></i>
               </div>
-              <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-4">Competición</h3>
+              <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">Competición</h3>
               <p class="text-gray-700 leading-relaxed">
                 Para quienes buscan más, ofrecemos preparación y apoyo en carreras locales y regionales. 
                 Tu podio te espera.
@@ -206,45 +209,73 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Sección Terreno Único */}
-      <section class="py-20 bg-gradient-to-br from-leufu-dark to-gray-800 text-white">
+      {/* Sección Equipo con foto oficial */}
+      <section class="py-20 bg-gradient-to-br from-leufu-black to-leufu-gray text-white">
         <div class="container mx-auto px-4">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="animate-slideInLeft">
               <h2 class="text-4xl md:text-5xl font-montserrat font-bold mb-6">
-                Un Terreno Único en Chile
+                Nuestro Equipo
               </h2>
               <p class="text-lg leading-relaxed mb-6">
-                Lebu nos regala algo que pocos lugares en Chile pueden ofrecer: <strong class="text-leufu-accent">senderos 
-                que conectan la montaña directamente con el mar</strong>. Desde las alturas de nuestros cerros hasta las 
-                playas del Pacífico, cada ruta es un viaje épico.
+                Somos más que un club, <strong class="text-leufu-accent">somos una familia unida por la pasión del ciclismo</strong>. 
+                Desde principiantes hasta competidores experimentados, todos compartimos el mismo amor por los senderos de Lebu.
               </p>
               <p class="text-lg leading-relaxed mb-6">
-                Nuestros senderos exclusivos son el corazón del club. Trabajamos en su mantención constante para 
-                garantizar experiencias seguras y memorables. <strong class="text-leufu-accent">Paisajes que 
-                parecen sacados de una postal</strong> acompañan cada pedalada.
+                Cada salida es una oportunidad para crear recuerdos, superar desafíos y fortalecer los lazos que nos unen. 
+                <strong class="text-leufu-accent">Juntos somos más fuertes</strong>, y cada miembro aporta su energía única al club.
               </p>
               <div class="flex flex-wrap gap-4">
                 <div class="flex items-center space-x-2">
                   <i class="fas fa-check-circle text-leufu-accent text-2xl"></i>
-                  <span>Senderos exclusivos</span>
+                  <span>50+ Ciclistas Activos</span>
                 </div>
                 <div class="flex items-center space-x-2">
                   <i class="fas fa-check-circle text-leufu-accent text-2xl"></i>
-                  <span>Cerro + Mar</span>
+                  <span>Todos los Niveles</span>
                 </div>
                 <div class="flex items-center space-x-2">
                   <i class="fas fa-check-circle text-leufu-accent text-2xl"></i>
-                  <span>Vistas únicas</span>
+                  <span>Comunidad Inclusiva</span>
                 </div>
               </div>
             </div>
             <div class="animate-slideInRight">
               <img 
+                src="/images/equipo.jpg" 
+                alt="Equipo Leufu MTB"
+                class="rounded-2xl shadow-2xl border-4 border-leufu-accent"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sección Terreno Único */}
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+              <img 
                 src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=2070" 
                 alt="Vista al mar desde senderos de Lebu"
                 class="rounded-2xl shadow-2xl"
               />
+            </div>
+            <div class="order-1 md:order-2">
+              <h2 class="text-4xl md:text-5xl font-montserrat font-bold mb-6 text-leufu-black">
+                Un Terreno Único en Chile
+              </h2>
+              <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                Lebu nos regala algo que pocos lugares en Chile pueden ofrecer: <strong class="text-leufu-primary">senderos 
+                que conectan la montaña directamente con el mar</strong>. Desde las alturas de nuestros cerros hasta las 
+                playas del Pacífico, cada ruta es un viaje épico.
+              </p>
+              <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                Nuestros senderos exclusivos son el corazón del club. Trabajamos en su mantención constante para 
+                garantizar experiencias seguras y memorables. <strong class="text-leufu-primary">Paisajes que 
+                parecen sacados de una postal</strong> acompañan cada pedalada.
+              </p>
             </div>
           </div>
         </div>
@@ -254,7 +285,7 @@ app.get('/', (c) => {
       <section id="rutas" class="py-20 bg-leufu-light">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16 animate-fadeInUp">
-            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-dark mb-4">
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-black mb-4">
               Nuestras Rutas
             </h2>
             <div class="section-divider mb-6"></div>
@@ -264,14 +295,14 @@ app.get('/', (c) => {
           </div>
 
           <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border-2 border-transparent hover:border-leufu-accent">
               <img 
                 src="https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?q=80&w=2070" 
                 alt="Rutas en Lebu"
                 class="w-full h-64 object-cover"
               />
               <div class="p-8">
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-4">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">
                   <i class="fas fa-map-marked-alt text-leufu-primary mr-2"></i>
                   Rutas Locales - Lebu
                 </h3>
@@ -280,27 +311,27 @@ app.get('/', (c) => {
                   al océano. Perfectos para entrenar entre semana y descubrir rincones secretos de nuestra comuna.
                 </p>
                 <div class="flex flex-wrap gap-3">
-                  <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                  <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold border border-red-300">
                     <i class="fas fa-mountain mr-1"></i> Cross Country
                   </span>
-                  <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                  <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold border border-gray-300">
                     <i class="fas fa-road mr-1"></i> Ruta
                   </span>
-                  <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold">
+                  <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold border border-red-300">
                     <i class="fas fa-star mr-1"></i> Todos los niveles
                   </span>
                 </div>
               </div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border-2 border-transparent hover:border-leufu-accent">
               <img 
                 src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=2141" 
                 alt="Cordillera de Nahuelbuta"
                 class="w-full h-64 object-cover"
               />
               <div class="p-8">
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-4">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">
                   <i class="fas fa-mountain text-leufu-secondary mr-2"></i>
                   Cordillera de Nahuelbuta
                 </h3>
@@ -309,13 +340,13 @@ app.get('/', (c) => {
                   Rutas de mayor exigencia con bosques nativos, araucarias milenarias y paisajes de altura.
                 </p>
                 <div class="flex flex-wrap gap-3">
-                  <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                  <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold border border-red-300">
                     <i class="fas fa-mountain mr-1"></i> XC Avanzado
                   </span>
-                  <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold">
+                  <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold border border-gray-300">
                     <i class="fas fa-hiking mr-1"></i> Expedición
                   </span>
-                  <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">
+                  <span class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold">
                     <i class="fas fa-fire mr-1"></i> Nivel Alto
                   </span>
                 </div>
@@ -325,167 +356,172 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      {/* Calendario de Rutas */}
+      <section id="calendario" class="py-20 bg-gradient-to-br from-leufu-black to-leufu-gray text-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold mb-4">
+              Calendario de Rutas
+            </h2>
+            <div class="section-divider mb-6 bg-white"></div>
+            <p class="text-xl max-w-3xl mx-auto">
+              Rutas programadas en Lebu - Únete a nuestras salidas semanales
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
+              <div class="flex items-center justify-between mb-4">
+                <div class="bg-leufu-primary text-white px-4 py-2 rounded-lg font-bold">
+                  SÁBADO
+                </div>
+                <div class="text-2xl font-bold text-leufu-primary">8:00 AM</div>
+              </div>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Ruta Cerro Obligado</h3>
+              <p class="text-gray-600 mb-4">Salida técnica por senderos locales. Nivel: Intermedio</p>
+              <div class="flex items-center text-sm text-gray-600">
+                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
+                <span>Punto de encuentro: Plaza de Lebu</span>
+              </div>
+            </div>
+
+            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
+              <div class="flex items-center justify-between mb-4">
+                <div class="bg-leufu-primary text-white px-4 py-2 rounded-lg font-bold">
+                  DOMINGO
+                </div>
+                <div class="text-2xl font-bold text-leufu-primary">7:00 AM</div>
+              </div>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Ruta Larga Costa</h3>
+              <p class="text-gray-600 mb-4">70km por la costa. Vistas al mar. Nivel: Avanzado</p>
+              <div class="flex items-center text-sm text-gray-600">
+                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
+                <span>Punto de encuentro: Plaza de Lebu</span>
+              </div>
+            </div>
+
+            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
+              <div class="flex items-center justify-between mb-4">
+                <div class="bg-leufu-secondary text-white px-4 py-2 rounded-lg font-bold">
+                  15 DIC
+                </div>
+                <div class="text-2xl font-bold text-leufu-secondary">6:00 AM</div>
+              </div>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Piedra del Águila</h3>
+              <p class="text-gray-600 mb-4">Expedición a Nahuelbuta. Nivel: Experto</p>
+              <div class="flex items-center text-sm text-gray-600">
+                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
+                <span>Salida desde Lebu (transporte coordinado)</span>
+              </div>
+            </div>
+
+            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
+              <div class="flex items-center justify-between mb-4">
+                <div class="bg-leufu-accent text-white px-4 py-2 rounded-lg font-bold">
+                  SÁBADO
+                </div>
+                <div class="text-2xl font-bold text-leufu-accent">9:00 AM</div>
+              </div>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Ruta Familiar Playa</h3>
+              <p class="text-gray-600 mb-4">25km suave para toda la familia. Nivel: Principiante</p>
+              <div class="flex items-center text-sm text-gray-600">
+                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
+                <span>Punto de encuentro: Plaza de Lebu</span>
+              </div>
+            </div>
+
+            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
+              <div class="flex items-center justify-between mb-4">
+                <div class="bg-leufu-primary text-white px-4 py-2 rounded-lg font-bold">
+                  DOM 1
+                </div>
+                <div class="text-2xl font-bold text-leufu-primary">8:00 AM</div>
+              </div>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Mantención de Senderos</h3>
+              <p class="text-gray-600 mb-4">Jornada comunitaria + asado final</p>
+              <div class="flex items-center text-sm text-gray-600">
+                <i class="fas fa-tools text-leufu-primary mr-2"></i>
+                <span>Primer domingo de cada mes</span>
+              </div>
+            </div>
+
+            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
+              <div class="flex items-center justify-between mb-4">
+                <div class="bg-leufu-secondary text-white px-4 py-2 rounded-lg font-bold">
+                  22 DIC
+                </div>
+                <div class="text-2xl font-bold text-leufu-secondary">8:00 AM</div>
+              </div>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Cierre de Temporada</h3>
+              <p class="text-gray-600 mb-4">Ruta especial + celebración del club</p>
+              <div class="flex items-center text-sm text-gray-600">
+                <i class="fas fa-star text-leufu-accent mr-2"></i>
+                <span>Evento especial del club</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <p class="text-lg mb-6">
+              <i class="fas fa-info-circle text-leufu-accent mr-2"></i>
+              Las rutas pueden cambiar según condiciones climáticas. Confirma siempre en nuestro Instagram.
+            </p>
+            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block text-white">
+              <i class="fab fa-instagram mr-2"></i>
+              Ver Calendario Actualizado
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Sección Para Quién es el Club */}
       <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16 animate-fadeInUp">
-            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-dark mb-4">
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-black mb-4">
               ¿Para Quién es Leufu MTB?
             </h2>
             <div class="section-divider mb-6"></div>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div class="mb-8">
-                <div class="flex items-start space-x-4 mb-6">
-                  <div class="bg-leufu-primary text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <i class="fas fa-bicycle text-xl"></i>
-                  </div>
-                  <div>
-                    <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
-                      ¿Quieres Iniciarte en el Ciclismo?
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                      Este es tu lugar. No importa si nunca has pedaleado en montaña o si apenas estás pensando 
-                      en comprar tu primera bici. <strong>Te enseñamos desde cero</strong>, con paciencia, técnica 
-                      y rutas adaptadas a principiantes.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-8">
-                <div class="flex items-start space-x-4 mb-6">
-                  <div class="bg-leufu-secondary text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <i class="fas fa-users text-xl"></i>
-                  </div>
-                  <div>
-                    <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
-                      ¿Buscas Comunidad y Diversión?
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                      Más que un club, somos una familia. Salidas recreacionales, eventos sociales, asados post-ruta 
-                      y aventuras que crean amistades para toda la vida. <strong>Pedalear juntos nos hace más fuertes</strong>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-8">
-                <div class="flex items-start space-x-4 mb-6">
-                  <div class="bg-leufu-accent text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <i class="fas fa-flag-checkered text-xl"></i>
-                  </div>
-                  <div>
-                    <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
-                      ¿Tienes Metas Competitivas?
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                      Si tu objetivo es competir, también estás en el lugar correcto. Participamos en carreras 
-                      locales y regionales, con entrenamientos específicos y apoyo técnico. <strong>Tu próximo 
-                      podio puede estar más cerca de lo que crees</strong>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="animate-fadeIn">
-              <img 
-                src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070" 
-                alt="Grupo de ciclistas"
-                class="rounded-2xl shadow-2xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sección Eventos Próximos */}
-      <section id="eventos" class="py-20 bg-gradient-to-br from-leufu-primary to-leufu-secondary text-white">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-montserrat font-bold mb-4">
-              Próximos Eventos
-            </h2>
-            <div class="section-divider mb-6 bg-white"></div>
-            <p class="text-xl max-w-3xl mx-auto">
-              Únete a nuestras actividades semanales y eventos especiales
-            </p>
-          </div>
-
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white text-leufu-dark rounded-2xl p-8 card-hover">
-              <div class="text-center mb-6">
-                <div class="bg-leufu-accent text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i class="fas fa-calendar-day text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-montserrat font-bold mb-2">Rutas Semanales</h3>
-                <p class="text-gray-600">Todos los Sábados y Domingos</p>
+            <div class="bg-gradient-to-br from-red-50 to-white p-8 rounded-2xl shadow-lg">
+              <div class="bg-leufu-primary text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                <i class="fas fa-bicycle text-2xl"></i>
               </div>
-              <ul class="space-y-3 text-gray-700">
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-check text-leufu-secondary"></i>
-                  <span>Sábados 8:00 AM - Ruta Local</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-check text-leufu-secondary"></i>
-                  <span>Domingos 7:00 AM - Ruta Larga</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-check text-leufu-secondary"></i>
-                  <span>Punto de encuentro: Plaza de Lebu</span>
-                </li>
-              </ul>
+              <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-3">
+                Principiantes
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                ¿Primera vez en MTB? <strong>Te enseñamos desde cero</strong>. Rutas suaves, técnica básica y 
+                un grupo que te acompaña en cada pedaleo.
+              </p>
             </div>
 
-            <div class="bg-white text-leufu-dark rounded-2xl p-8 card-hover">
-              <div class="text-center mb-6">
-                <div class="bg-leufu-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i class="fas fa-trophy text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-montserrat font-bold mb-2">Carreras 2024</h3>
-                <p class="text-gray-600">Calendario Competitivo</p>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg">
+              <div class="bg-leufu-black text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                <i class="fas fa-users text-2xl"></i>
               </div>
-              <ul class="space-y-3 text-gray-700">
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-medal text-leufu-accent"></i>
-                  <span>XC Lebu - Marzo 2024</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-medal text-leufu-accent"></i>
-                  <span>Desafío Nahuelbuta - Junio</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-medal text-leufu-accent"></i>
-                  <span>Enduro Arauco - Octubre</span>
-                </li>
-              </ul>
+              <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-3">
+                Recreacionales
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Buscas <strong>diversión y comunidad</strong>. Salidas sociales, eventos y amistades que duran 
+                toda la vida. Aquí encuentras tu tribu.
+              </p>
             </div>
 
-            <div class="bg-white text-leufu-dark rounded-2xl p-8 card-hover">
-              <div class="text-center mb-6">
-                <div class="bg-leufu-secondary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i class="fas fa-tools text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-montserrat font-bold mb-2">Mantención Senderos</h3>
-                <p class="text-gray-600">Trabajo Comunitario</p>
+            <div class="bg-gradient-to-br from-red-50 to-white p-8 rounded-2xl shadow-lg">
+              <div class="bg-leufu-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                <i class="fas fa-flag-checkered text-2xl"></i>
               </div>
-              <ul class="space-y-3 text-gray-700">
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-hard-hat text-leufu-primary"></i>
-                  <span>Primer domingo de cada mes</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-hard-hat text-leufu-primary"></i>
-                  <span>Cuidamos nuestros trails</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                  <i class="fas fa-hard-hat text-leufu-primary"></i>
-                  <span>Finalizamos con asado</span>
-                </li>
-              </ul>
+              <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-3">
+                Competitivos
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Quieres <strong>competir y ganar</strong>. Entrenamientos estructurados, apoyo técnico y 
+                participación en carreras regionales.
+              </p>
             </div>
           </div>
         </div>
@@ -495,7 +531,7 @@ app.get('/', (c) => {
       <section class="py-20 bg-leufu-light">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-dark mb-4">
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-black mb-4">
               Galería
             </h2>
             <div class="section-divider mb-6"></div>
@@ -518,7 +554,7 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1606641954146-7b20c4816595?q=80&w=2070" alt="Grupo ciclistas" />
+              <img src="/images/equipo.jpg" alt="Equipo Leufu MTB" />
               <div class="gallery-overlay">
                 <p class="text-white font-semibold">Nuestra Familia</p>
               </div>
@@ -546,7 +582,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Llamado a la Acción */}
-      <section id="contacto" class="py-20 bg-gradient-to-r from-leufu-primary via-leufu-secondary to-leufu-primary text-white">
+      <section id="contacto" class="py-20 bg-gradient-to-r from-leufu-black via-leufu-primary to-leufu-black text-white">
         <div class="container mx-auto px-4 text-center">
           <h2 class="text-4xl md:text-5xl font-montserrat font-bold mb-6">
             ¿Listo para Unirte a la Aventura?
@@ -556,13 +592,13 @@ app.get('/', (c) => {
             Da el primer paso y descubre por qué somos más que un club: <strong>somos familia</strong>.
           </p>
           <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="bg-white text-leufu-primary px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100">
+            <a href="/inscripcion" class="bg-white text-leufu-primary px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100">
+              <i class="fas fa-user-plus mr-2"></i>
+              Inscríbete Ahora
+            </a>
+            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="btn-secondary px-8 py-4 rounded-full text-lg font-semibold inline-block text-white">
               <i class="fab fa-instagram mr-2"></i>
               Síguenos en Instagram
-            </a>
-            <a href="mailto:contacto@leufumtb.cl" class="bg-leufu-accent text-white px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-amber-600">
-              <i class="fas fa-envelope mr-2"></i>
-              Contáctanos
             </a>
           </div>
           <p class="mt-8 text-lg">
@@ -577,14 +613,283 @@ app.get('/', (c) => {
   )
 })
 
-// Página Nosotros
+// Página de Inscripción
+app.get('/inscripcion', (c) => {
+  return c.render(
+    <div>
+      <Navigation />
+      
+      {/* Hero Inscripción */}
+      <section class="relative h-96 flex items-center justify-center text-white bg-gradient-to-br from-leufu-black to-leufu-primary">
+        <div class="relative z-10 text-center px-4">
+          <i class="fas fa-user-plus text-6xl mb-4"></i>
+          <h1 class="text-5xl md:text-6xl font-montserrat font-bold mb-4">
+            Únete a Leufu MTB
+          </h1>
+          <p class="text-xl md:text-2xl">
+            Completa el formulario y sé parte de nuestra familia
+          </p>
+        </div>
+      </section>
+
+      {/* Formulario de Inscripción */}
+      <section class="py-20 bg-leufu-light">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+            <div class="text-center mb-10">
+              <img src="/images/logo.png" alt="Leufu MTB" class="h-24 w-24 mx-auto mb-4" />
+              <h2 class="text-3xl font-montserrat font-bold text-leufu-black mb-4">
+                Formulario de Inscripción
+              </h2>
+              <p class="text-gray-600">
+                Completa tus datos y nos pondremos en contacto contigo para finalizar tu inscripción
+              </p>
+            </div>
+
+            <form class="space-y-6">
+              {/* Datos Personales */}
+              <div class="border-l-4 border-leufu-primary pl-4 mb-8">
+                <h3 class="text-2xl font-bold text-leufu-black mb-2">Datos Personales</h3>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="form-label">Nombre Completo *</label>
+                  <input 
+                    type="text" 
+                    name="nombre" 
+                    required 
+                    class="form-input" 
+                    placeholder="Juan Pérez"
+                  />
+                </div>
+
+                <div>
+                  <label class="form-label">RUT *</label>
+                  <input 
+                    type="text" 
+                    name="rut" 
+                    required 
+                    class="form-input" 
+                    placeholder="12.345.678-9"
+                  />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="form-label">Fecha de Nacimiento *</label>
+                  <input 
+                    type="date" 
+                    name="fecha_nacimiento" 
+                    required 
+                    class="form-input"
+                  />
+                </div>
+
+                <div>
+                  <label class="form-label">Género *</label>
+                  <select name="genero" required class="form-select">
+                    <option value="">Selecciona...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Información de Contacto */}
+              <div class="border-l-4 border-leufu-primary pl-4 mb-8 mt-10">
+                <h3 class="text-2xl font-bold text-leufu-black mb-2">Información de Contacto</h3>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="form-label">Email *</label>
+                  <input 
+                    type="email" 
+                    name="email" 
+                    required 
+                    class="form-input" 
+                    placeholder="tu@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label class="form-label">Teléfono *</label>
+                  <input 
+                    type="tel" 
+                    name="telefono" 
+                    required 
+                    class="form-input" 
+                    placeholder="+56 9 1234 5678"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label">Dirección</label>
+                <input 
+                  type="text" 
+                  name="direccion" 
+                  class="form-input" 
+                  placeholder="Calle, número, ciudad"
+                />
+              </div>
+
+              {/* Información Ciclística */}
+              <div class="border-l-4 border-leufu-primary pl-4 mb-8 mt-10">
+                <h3 class="text-2xl font-bold text-leufu-black mb-2">Información Ciclística</h3>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="form-label">Nivel de Experiencia *</label>
+                  <select name="nivel" required class="form-select">
+                    <option value="">Selecciona...</option>
+                    <option value="principiante">Principiante (Recién empiezo)</option>
+                    <option value="intermedio">Intermedio (1-2 años de experiencia)</option>
+                    <option value="avanzado">Avanzado (Más de 2 años)</option>
+                    <option value="competitivo">Competitivo (Participo en carreras)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="form-label">Modalidad Preferida *</label>
+                  <select name="modalidad" required class="form-select">
+                    <option value="">Selecciona...</option>
+                    <option value="xc">Cross Country (XC)</option>
+                    <option value="ruta">Ciclismo de Ruta</option>
+                    <option value="ambas">Ambas modalidades</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label">¿Tienes bicicleta propia? *</label>
+                <select name="tiene_bici" required class="form-select">
+                  <option value="">Selecciona...</option>
+                  <option value="si">Sí, tengo bicicleta</option>
+                  <option value="no">No, pero planeo comprar pronto</option>
+                  <option value="prestada">Uso una prestada</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="form-label">Motivación para unirte al club</label>
+                <textarea 
+                  name="motivacion" 
+                  class="form-textarea" 
+                  placeholder="Cuéntanos por qué quieres ser parte de Leufu MTB..."
+                ></textarea>
+              </div>
+
+              {/* Contacto de Emergencia */}
+              <div class="border-l-4 border-leufu-primary pl-4 mb-8 mt-10">
+                <h3 class="text-2xl font-bold text-leufu-black mb-2">Contacto de Emergencia</h3>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="form-label">Nombre Contacto de Emergencia *</label>
+                  <input 
+                    type="text" 
+                    name="emergencia_nombre" 
+                    required 
+                    class="form-input" 
+                    placeholder="Nombre completo"
+                  />
+                </div>
+
+                <div>
+                  <label class="form-label">Teléfono de Emergencia *</label>
+                  <input 
+                    type="tel" 
+                    name="emergencia_telefono" 
+                    required 
+                    class="form-input" 
+                    placeholder="+56 9 1234 5678"
+                  />
+                </div>
+              </div>
+
+              {/* Términos y Condiciones */}
+              <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
+                <label class="flex items-start space-x-3 cursor-pointer">
+                  <input type="checkbox" name="acepto" required class="mt-1 w-5 h-5 text-leufu-primary" />
+                  <span class="text-gray-700 text-sm">
+                    Acepto los términos y condiciones del club. Entiendo que debo usar casco y equipo de seguridad 
+                    en todas las salidas, y que participo bajo mi propia responsabilidad. *
+                  </span>
+                </label>
+              </div>
+
+              {/* Botones */}
+              <div class="flex flex-col md:flex-row gap-4 pt-6">
+                <button 
+                  type="submit" 
+                  class="btn-primary px-8 py-4 rounded-full text-lg font-semibold text-white w-full md:w-auto"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i>
+                  Enviar Inscripción
+                </button>
+                <a 
+                  href="/" 
+                  class="bg-gray-200 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold text-center hover:bg-gray-300 w-full md:w-auto"
+                >
+                  <i class="fas fa-arrow-left mr-2"></i>
+                  Volver al Inicio
+                </a>
+              </div>
+
+              <p class="text-sm text-gray-500 text-center mt-4">
+                * Campos obligatorios
+              </p>
+            </form>
+
+            {/* Información Adicional */}
+            <div class="mt-12 pt-8 border-t-2 border-gray-200">
+              <h3 class="text-xl font-bold text-leufu-black mb-4">¿Qué incluye la membresía?</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-check-circle text-leufu-primary text-xl mt-1"></i>
+                  <span>Participación en todas las rutas semanales</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-check-circle text-leufu-primary text-xl mt-1"></i>
+                  <span>Acceso a talleres técnicos y clínicas de manejo</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-check-circle text-leufu-primary text-xl mt-1"></i>
+                  <span>Apoyo y acompañamiento en carreras</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-check-circle text-leufu-primary text-xl mt-1"></i>
+                  <span>Eventos sociales y actividades del club</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-check-circle text-leufu-primary text-xl mt-1"></i>
+                  <span>Descuentos en tiendas asociadas</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  )
+})
+
+// Página Nosotros - Actualizada con nuevos colores
 app.get('/nosotros', (c) => {
   return c.render(
     <div>
       <Navigation />
       
       {/* Hero Nosotros */}
-      <section class="hero-parallax relative h-96 flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070');">
+      <section class="hero-parallax relative h-96 flex items-center justify-center text-white" style="background-image: url('/images/equipo.jpg');">
         <div class="hero-overlay absolute inset-0"></div>
         <div class="relative z-10 text-center px-4">
           <h1 class="text-5xl md:text-6xl font-montserrat font-bold mb-4">
@@ -601,7 +906,7 @@ app.get('/nosotros', (c) => {
         <div class="container mx-auto px-4">
           <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
-              <h2 class="text-4xl font-montserrat font-bold text-leufu-dark mb-4">
+              <h2 class="text-4xl font-montserrat font-bold text-leufu-black mb-4">
                 ¿Quiénes Somos?
               </h2>
               <div class="section-divider mb-6"></div>
@@ -616,12 +921,12 @@ app.get('/nosotros', (c) => {
 
               <p class="text-xl text-gray-700 leading-relaxed mb-6">
                 Somos un grupo de apasionados ciclistas que un día decidió convertir las salidas esporádicas en algo más grande: 
-                <strong class="text-leufu-secondary">una comunidad organizada, inclusiva y con propósito</strong>. Hoy, varios 
+                <strong class="text-leufu-primary">una comunidad organizada, inclusiva y con propósito</strong>. Hoy, varios 
                 años después, Leufu MTB es uno de los clubes de ciclismo más activos de la Provincia de Arauco.
               </p>
 
-              <div class="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl my-8">
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-4">
+              <div class="bg-gradient-to-r from-red-50 to-gray-50 p-8 rounded-2xl my-8 border-l-4 border-leufu-primary">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">
                   <i class="fas fa-quote-left text-leufu-accent mr-2"></i>
                   Nuestro Eslogan
                 </h3>
@@ -641,12 +946,12 @@ app.get('/nosotros', (c) => {
       <section class="py-20 bg-leufu-light">
         <div class="container mx-auto px-4">
           <div class="grid md:grid-cols-2 gap-12">
-            <div class="bg-white rounded-2xl p-8 shadow-xl">
+            <div class="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-leufu-primary">
               <div class="flex items-center mb-6">
                 <div class="bg-leufu-primary text-white w-16 h-16 rounded-full flex items-center justify-center mr-4">
                   <i class="fas fa-bullseye text-3xl"></i>
                 </div>
-                <h3 class="text-3xl font-montserrat font-bold text-leufu-dark">Nuestra Misión</h3>
+                <h3 class="text-3xl font-montserrat font-bold text-leufu-black">Nuestra Misión</h3>
               </div>
               <p class="text-gray-700 leading-relaxed text-lg">
                 Fomentar el ciclismo en todas sus formas en la comuna de Lebu y la Provincia de Arauco, 
@@ -656,15 +961,15 @@ app.get('/nosotros', (c) => {
               </p>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 shadow-xl">
+            <div class="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-leufu-black">
               <div class="flex items-center mb-6">
-                <div class="bg-leufu-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                <div class="bg-leufu-black text-white w-16 h-16 rounded-full flex items-center justify-center mr-4">
                   <i class="fas fa-eye text-3xl"></i>
                 </div>
-                <h3 class="text-3xl font-montserrat font-bold text-leufu-dark">Nuestra Visión</h3>
+                <h3 class="text-3xl font-montserrat font-bold text-leufu-black">Nuestra Visión</h3>
               </div>
               <p class="text-gray-700 leading-relaxed text-lg">
-                Convertirnos en el <strong class="text-leufu-secondary">club de ciclismo de referencia en la Provincia de Arauco</strong>, 
+                Convertirnos en el <strong class="text-leufu-primary">club de ciclismo de referencia en la Provincia de Arauco</strong>, 
                 reconocido por nuestro espíritu inclusivo, por la calidad de nuestros senderos y por el impacto positivo que 
                 generamos en la comunidad local. Queremos poner a Lebu en el mapa nacional del ciclismo de montaña.
               </p>
@@ -677,19 +982,19 @@ app.get('/nosotros', (c) => {
       <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
-            <h2 class="text-4xl font-montserrat font-bold text-leufu-dark mb-4">
+            <h2 class="text-4xl font-montserrat font-bold text-leufu-black mb-4">
               Lo Que Nos Define
             </h2>
             <div class="section-divider mb-6"></div>
           </div>
 
           <div class="max-w-5xl mx-auto space-y-8">
-            <div class="flex items-start space-x-6 bg-gradient-to-r from-blue-50 to-transparent p-6 rounded-xl">
+            <div class="flex items-start space-x-6 bg-gradient-to-r from-red-50 to-transparent p-6 rounded-xl border-l-4 border-leufu-primary">
               <div class="bg-leufu-primary text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <i class="fas fa-mountain text-xl"></i>
               </div>
               <div>
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-2">
                   Territorio Único
                 </h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
@@ -699,12 +1004,12 @@ app.get('/nosotros', (c) => {
               </div>
             </div>
 
-            <div class="flex items-start space-x-6 bg-gradient-to-r from-green-50 to-transparent p-6 rounded-xl">
-              <div class="bg-leufu-secondary text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+            <div class="flex items-start space-x-6 bg-gradient-to-r from-gray-50 to-transparent p-6 rounded-xl border-l-4 border-leufu-black">
+              <div class="bg-leufu-black text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <i class="fas fa-users text-xl"></i>
               </div>
               <div>
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-2">
                   Comunidad Inclusiva
                 </h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
@@ -714,12 +1019,12 @@ app.get('/nosotros', (c) => {
               </div>
             </div>
 
-            <div class="flex items-start space-x-6 bg-gradient-to-r from-amber-50 to-transparent p-6 rounded-xl">
+            <div class="flex items-start space-x-6 bg-gradient-to-r from-red-50 to-transparent p-6 rounded-xl border-l-4 border-leufu-accent">
               <div class="bg-leufu-accent text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <i class="fas fa-heart text-xl"></i>
               </div>
               <div>
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-2">
                   Más que Deporte
                 </h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
@@ -729,12 +1034,12 @@ app.get('/nosotros', (c) => {
               </div>
             </div>
 
-            <div class="flex items-start space-x-6 bg-gradient-to-r from-purple-50 to-transparent p-6 rounded-xl">
-              <div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+            <div class="flex items-start space-x-6 bg-gradient-to-r from-gray-50 to-transparent p-6 rounded-xl border-l-4 border-leufu-black">
+              <div class="bg-gray-600 text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <i class="fas fa-tree text-xl"></i>
               </div>
               <div>
-                <h3 class="text-2xl font-montserrat font-bold text-leufu-dark mb-2">
+                <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-2">
                   Compromiso Ambiental
                 </h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
@@ -748,7 +1053,7 @@ app.get('/nosotros', (c) => {
       </section>
 
       {/* Timeline Historia */}
-      <section class="py-20 bg-gradient-to-br from-leufu-dark to-gray-800 text-white">
+      <section class="py-20 bg-gradient-to-br from-leufu-black to-leufu-gray text-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl font-montserrat font-bold mb-4">
@@ -763,7 +1068,7 @@ app.get('/nosotros', (c) => {
           <div class="max-w-4xl mx-auto">
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="bg-white text-leufu-dark p-6 rounded-xl">
+              <div class="bg-white text-leufu-black p-6 rounded-xl">
                 <h3 class="text-2xl font-bold mb-2">2019 - Los Inicios</h3>
                 <p class="text-gray-700">
                   Un grupo de amigos decide formalizar las salidas y crear el club. Primeras rutas organizadas 
@@ -774,7 +1079,7 @@ app.get('/nosotros', (c) => {
 
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="bg-white text-leufu-dark p-6 rounded-xl">
+              <div class="bg-white text-leufu-black p-6 rounded-xl">
                 <h3 class="text-2xl font-bold mb-2">2020 - Crecimiento y Comunidad</h3>
                 <p class="text-gray-700">
                   El club crece a más de 30 miembros activos. Primera participación organizada en carreras regionales. 
@@ -785,7 +1090,7 @@ app.get('/nosotros', (c) => {
 
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="bg-white text-leufu-dark p-6 rounded-xl">
+              <div class="bg-white text-leufu-black p-6 rounded-xl">
                 <h3 class="text-2xl font-bold mb-2">2021-2022 - Consolidación</h3>
                 <p class="text-gray-700">
                   Establecimiento de rutas semanales regulares. Primeras expediciones a Cordillera de Nahuelbuta. 
@@ -796,7 +1101,7 @@ app.get('/nosotros', (c) => {
 
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="bg-white text-leufu-dark p-6 rounded-xl">
+              <div class="bg-white text-leufu-black p-6 rounded-xl">
                 <h3 class="text-2xl font-bold mb-2">2023-2024 - Expansión y Reconocimiento</h3>
                 <p class="text-gray-700">
                   Más de 50 miembros activos. Leufu MTB se posiciona como referente en la provincia. 
@@ -812,7 +1117,7 @@ app.get('/nosotros', (c) => {
       <section class="py-20 bg-leufu-light">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
-            <h2 class="text-4xl font-montserrat font-bold text-leufu-dark mb-4">
+            <h2 class="text-4xl font-montserrat font-bold text-leufu-black mb-4">
               Lo Que Hacemos
             </h2>
             <div class="section-divider mb-6"></div>
@@ -822,60 +1127,60 @@ app.get('/nosotros', (c) => {
           </div>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-leufu-primary">
               <div class="text-center mb-4">
                 <i class="fas fa-route text-leufu-primary text-5xl mb-4"></i>
-                <h3 class="text-xl font-bold text-leufu-dark">Rutas Semanales</h3>
+                <h3 class="text-xl font-bold text-leufu-black">Rutas Semanales</h3>
               </div>
               <p class="text-gray-700 text-center">
                 Salidas organizadas todos los fines de semana con diferentes niveles de dificultad.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-leufu-accent">
               <div class="text-center mb-4">
                 <i class="fas fa-trophy text-leufu-accent text-5xl mb-4"></i>
-                <h3 class="text-xl font-bold text-leufu-dark">Participación en Carreras</h3>
+                <h3 class="text-xl font-bold text-leufu-black">Participación en Carreras</h3>
               </div>
               <p class="text-gray-700 text-center">
                 Representamos a Lebu en competencias XC y ruta a nivel regional.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-leufu-black">
               <div class="text-center mb-4">
-                <i class="fas fa-tools text-leufu-secondary text-5xl mb-4"></i>
-                <h3 class="text-xl font-bold text-leufu-dark">Mantención de Senderos</h3>
+                <i class="fas fa-tools text-leufu-black text-5xl mb-4"></i>
+                <h3 class="text-xl font-bold text-leufu-black">Mantención de Senderos</h3>
               </div>
               <p class="text-gray-700 text-center">
                 Jornadas mensuales de trabajo comunitario para mantener nuestros trails.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-leufu-primary">
               <div class="text-center mb-4">
-                <i class="fas fa-chalkboard-teacher text-purple-600 text-5xl mb-4"></i>
-                <h3 class="text-xl font-bold text-leufu-dark">Talleres Técnicos</h3>
+                <i class="fas fa-chalkboard-teacher text-leufu-primary text-5xl mb-4"></i>
+                <h3 class="text-xl font-bold text-leufu-black">Talleres Técnicos</h3>
               </div>
               <p class="text-gray-700 text-center">
                 Clínicas de técnica de manejo, mecánica básica y primeros auxilios.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-leufu-accent">
               <div class="text-center mb-4">
-                <i class="fas fa-users text-pink-600 text-5xl mb-4"></i>
-                <h3 class="text-xl font-bold text-leufu-dark">Eventos Sociales</h3>
+                <i class="fas fa-users text-leufu-accent text-5xl mb-4"></i>
+                <h3 class="text-xl font-bold text-leufu-black">Eventos Sociales</h3>
               </div>
               <p class="text-gray-700 text-center">
                 Asados, celebraciones y actividades que fortalecen nuestra comunidad.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-leufu-black">
               <div class="text-center mb-4">
-                <i class="fas fa-mountain text-indigo-600 text-5xl mb-4"></i>
-                <h3 class="text-xl font-bold text-leufu-dark">Expediciones Especiales</h3>
+                <i class="fas fa-mountain text-leufu-black text-5xl mb-4"></i>
+                <h3 class="text-xl font-bold text-leufu-black">Expediciones Especiales</h3>
               </div>
               <p class="text-gray-700 text-center">
                 Viajes a Nahuelbuta y otros destinos para vivir aventuras épicas.
@@ -886,7 +1191,7 @@ app.get('/nosotros', (c) => {
       </section>
 
       {/* Llamado a la Acción Final */}
-      <section class="py-20 bg-gradient-to-r from-leufu-primary to-leufu-secondary text-white">
+      <section class="py-20 bg-gradient-to-r from-leufu-primary to-leufu-black text-white">
         <div class="container mx-auto px-4 text-center">
           <h2 class="text-4xl md:text-5xl font-montserrat font-bold mb-6">
             Sé Parte de Nuestra Historia
@@ -896,13 +1201,13 @@ app.get('/nosotros', (c) => {
             <strong>El tuyo puede comenzar hoy</strong>.
           </p>
           <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="bg-white text-leufu-primary px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100">
+            <a href="/inscripcion" class="bg-white text-leufu-primary px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100">
+              <i class="fas fa-user-plus mr-2"></i>
+              Inscríbete Ahora
+            </a>
+            <a href="https://www.instagram.com/clubleufumtb/" target="_blank" class="btn-secondary px-8 py-4 rounded-full text-lg font-semibold inline-block text-white">
               <i class="fab fa-instagram mr-2"></i>
               Contáctanos por Instagram
-            </a>
-            <a href="mailto:contacto@leufumtb.cl" class="bg-leufu-accent text-white px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-amber-600">
-              <i class="fas fa-envelope mr-2"></i>
-              Escríbenos un Email
             </a>
           </div>
         </div>
