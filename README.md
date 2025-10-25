@@ -1,8 +1,8 @@
-# Leufu MTB - Sitio Web Oficial
+# Leufu MTB - Sitio Web Oficial 🚴‍♂️
 
-## 🚴‍♂️ Descripción del Proyecto
+## 🎨 Descripción del Proyecto
 
-Sitio web oficial del Club de Ciclismo **Leufu MTB**, ubicado en Lebu, Provincia de Arauco, Chile. Una plataforma moderna y motivadora diseñada para mostrar la esencia del club, sus valores, rutas y comunidad.
+Sitio web oficial del Club de Ciclismo **Leufu MTB**, ubicado en Lebu, Provincia de Arauco, Chile. Una plataforma moderna y profesional diseñada con los **colores oficiales del club (negro y rojo)** para mostrar la esencia del club, sus valores, rutas y comunidad.
 
 ### Significado de "Leufu"
 **"Leufu"** significa **"Río"** en Mapudungún, en honor al **Río Lebu** que atraviesa nuestra comuna y que, como nosotros, conecta la montaña con el mar.
@@ -22,44 +22,64 @@ Sitio web oficial del Club de Ciclismo **Leufu MTB**, ubicado en Lebu, Provincia
 
 ## ✨ Características Implementadas
 
-### Página Principal (Home) ✅
-- **Hero Section**: Banner principal con imagen parallax y eslogan motivador
+### 🏠 Página Principal (Home)
+- **Hero Section**: Banner con logo oficial, imagen parallax y eslogan motivador
 - **Contador de Estadísticas**: Miembros activos, rutas exploradas, eventos y años de historia
-- **Sección Valores**: Presentación de los tres pilares fundamentales:
+- **Sección Valores**: Presentación de los tres pilares fundamentales con colores negro/rojo:
   - 🤝 **Amistad**: Construcción de comunidad y vínculos genuinos
   - 🏆 **Superación**: Desafíos personales y crecimiento continuo
   - 🥇 **Competición**: Apoyo para competidores y aspirantes
+- **Sección Equipo**: Foto oficial del equipo con descripción motivadora
 - **Terreno Único**: Destacado de los senderos exclusivos que conectan cerro y mar
 - **Rutas**: Dos categorías principales:
   - Rutas Locales en Lebu (XC y Ruta)
   - Expediciones a Cordillera de Nahuelbuta (Piedra del Águila)
+- **📅 Calendario de Rutas**: Programación semanal y eventos especiales con fechas:
+  - Sábados 8:00 AM - Ruta Cerro Obligado (Intermedio)
+  - Domingos 7:00 AM - Ruta Larga Costa 70km (Avanzado)
+  - Sábados 9:00 AM - Ruta Familiar Playa 25km (Principiante)
+  - Primer domingo de cada mes - Mantención de Senderos
+  - 15 Diciembre - Piedra del Águila (Experto)
+  - 22 Diciembre - Cierre de Temporada
 - **Para Quién es el Club**: Dirigido a principiantes, recreacionales y competitivos
-- **Próximos Eventos**: Calendario de actividades semanales y especiales
-- **Galería de Imágenes**: Showcasing de momentos épicos del club
-- **Llamado a la Acción**: Invitación clara a unirse al club
+- **Galería de Imágenes**: Showcasing con foto oficial del equipo
+- **Llamado a la Acción**: Botones a inscripción e Instagram
 
-### Página "Nosotros" ✅
+### 👥 Página "Nosotros"
+- **Hero con foto del equipo**: Banner con imagen oficial del club
 - **Historia del Club**: Origen, significado y evolución
-- **Misión y Visión**: Objetivos claros del club
-- **Lo Que Nos Define**: Características distintivas y valores
+- **Misión y Visión**: Objetivos claros con diseño en rojo y negro
+- **Lo Que Nos Define**: 4 características distintivas y valores
 - **Timeline**: Hitos importantes desde 2019 hasta la actualidad
 - **Actividades del Club**: 6 categorías de actividades regulares
-- **Llamado a la Acción**: Invitación a ser parte de la historia
+- **Llamado a la Acción**: Invitación a inscripción
 
-### Diseño y Experiencia de Usuario ✅
-- **Responsive Design**: Optimizado para desktop, tablet y móvil
-- **Paleta de Colores**:
-  - Azul Primario: `#1e40af` (confianza, profesionalismo)
-  - Verde Secundario: `#059669` (naturaleza, crecimiento)
-  - Naranja Acento: `#f59e0b` (energía, motivación)
-  - Gris Oscuro: `#1f2937` (elegancia)
-  - Gris Claro: `#f3f4f6` (limpieza)
-- **Tipografías**:
-  - **Montserrat**: Títulos y encabezados (Bold, Semibold)
-  - **Roboto**: Texto del cuerpo (Regular, Medium)
-- **Animaciones**: FadeIn, SlideIn, Parallax, Hover effects
-- **Navegación Sticky**: Menú fijo al hacer scroll
-- **Iconografía**: FontAwesome para íconos profesionales
+### 📝 Página de Inscripción (NUEVA)
+- **Formulario Completo** con secciones:
+  - Datos Personales (nombre, RUT, fecha nacimiento, género)
+  - Información de Contacto (email, teléfono, dirección)
+  - Información Ciclística (nivel, modalidad, bicicleta)
+  - Motivación para unirte
+  - Contacto de Emergencia
+  - Términos y condiciones
+- **Validación de campos** requeridos
+- **Diseño profesional** con bordes rojos y formularios modernos
+- **Información de membresía** incluida
+
+### 🎨 Diseño Profesional
+- **Paleta de Colores Oficial** (Negro y Rojo):
+  - Rojo Primario: `#dc2626` (energía, pasión)
+  - Rojo Secundario: `#991b1b` (intensidad)
+  - Rojo Acento: `#ef4444` (destacados)
+  - Negro: `#000000` (elegancia, profesionalismo)
+  - Negro Oscuro: `#0a0a0a` (fondos)
+  - Gris Oscuro: `#1f1f1f` (secciones)
+- **Logo Oficial**: Integrado en navegación y footer
+- **Foto del Equipo**: Imagen oficial del club en galería y sección equipo
+- **100% Responsive**: Móvil, tablet, desktop
+- **Animaciones** suaves: fadeIn, slideIn, parallax, hover
+- **Tipografías** elegantes: Montserrat + Roboto
+- **Bordes y detalles** en rojo para destacar
 
 ---
 
@@ -90,18 +110,19 @@ Sitio web oficial del Club de Ciclismo **Leufu MTB**, ubicado en Lebu, Provincia
 
 ---
 
-## 📅 Actividades del Club
+## 📅 Calendario de Actividades
 
-### Regulares
-- **Rutas Semanales**: Sábados 8:00 AM (local) y Domingos 7:00 AM (larga)
-- **Punto de Encuentro**: Plaza de Lebu
-- **Mantención de Senderos**: Primer domingo de cada mes
+### Rutas Semanales
+- **Sábados 8:00 AM**: Ruta Cerro Obligado (Intermedio)
+- **Domingos 7:00 AM**: Ruta Larga Costa 70km (Avanzado)
+- **Sábados 9:00 AM**: Ruta Familiar Playa 25km (Principiante)
 
 ### Eventos Especiales
-- Participación en carreras XC locales y regionales
-- Expediciones a Nahuelbuta
-- Talleres técnicos (manejo, mecánica, primeros auxilios)
-- Eventos sociales y asados post-ruta
+- **Primer domingo de cada mes**: Mantención de Senderos + Asado
+- **15 Diciembre**: Expedición Piedra del Águila (Experto)
+- **22 Diciembre**: Cierre de Temporada (Evento especial)
+
+**Punto de encuentro**: Plaza de Lebu
 
 ---
 
@@ -169,17 +190,17 @@ pm2 delete leufu-mtb
 
 ```json
 {
-  "dev": "vite",                                          // Desarrollo con Vite
-  "dev:sandbox": "wrangler pages dev dist --ip 0.0.0.0 --port 3000",  // Desarrollo con Wrangler
-  "build": "vite build",                                  // Construir para producción
-  "preview": "wrangler pages dev dist",                   // Preview local
-  "deploy": "npm run build && wrangler pages deploy dist", // Desplegar a Cloudflare
+  "dev": "vite",
+  "dev:sandbox": "wrangler pages dev dist --ip 0.0.0.0 --port 3000",
+  "build": "vite build",
+  "preview": "wrangler pages dev dist",
+  "deploy": "npm run build && wrangler pages deploy dist",
   "deploy:prod": "npm run build && wrangler pages deploy dist --project-name leufu-mtb",
-  "clean-port": "fuser -k 3000/tcp 2>/dev/null || true", // Limpiar puerto 3000
-  "test": "curl http://localhost:3000",                   // Test rápido
-  "git:commit": "git add . && git commit -m",             // Commit rápido
-  "git:status": "git status",                             // Estado de Git
-  "git:log": "git log --oneline"                          // Historial Git
+  "clean-port": "fuser -k 3000/tcp 2>/dev/null || true",
+  "test": "curl http://localhost:3000",
+  "git:commit": "git add . && git commit -m",
+  "git:status": "git status",
+  "git:log": "git log --oneline"
 }
 ```
 
@@ -190,9 +211,12 @@ pm2 delete leufu-mtb
 ```
 webapp/
 ├── src/
-│   ├── index.tsx           # Aplicación principal Hono (rutas y páginas)
+│   ├── index.tsx           # Aplicación principal Hono (todas las páginas)
 │   └── renderer.tsx        # Configuración del renderizador JSX
 ├── public/
+│   ├── images/
+│   │   ├── logo.png        # Logo oficial del club
+│   │   └── equipo.jpg      # Foto oficial del equipo
 │   └── static/
 │       └── style.css       # Estilos CSS personalizados
 ├── dist/                   # Build output (generado)
@@ -211,29 +235,27 @@ webapp/
 ## 📊 Arquitectura de Datos
 
 ### No se utiliza base de datos actualmente
-El sitio es completamente estático con contenido generado en el servidor. No hay almacenamiento de datos de usuarios ni formularios interactivos en esta versión.
+El sitio es completamente estático con contenido generado en el servidor. El formulario de inscripción está preparado para integración futura con backend.
 
 ### Futuras Mejoras Potenciales
-- **Cloudflare D1**: Base de datos SQLite para almacenar eventos, rutas y miembros
-- **Cloudflare KV**: Para configuración dinámica
-- **Formulario de Contacto**: Integración con email o Telegram
+- **Cloudflare D1**: Base de datos SQLite para almacenar inscripciones
+- **Email Service**: Envío de emails al recibir inscripciones
+- **Panel de Administración**: Gestión de miembros y eventos
 
 ---
 
-## 🎓 Guía de Usuario
+## 🎓 Navegación del Sitio
 
-### Navegación del Sitio
-1. **Inicio**: Página principal con toda la información clave del club
-2. **Nosotros**: Historia detallada, misión, visión y timeline
-3. **Rutas**: Ancla a sección de rutas en página principal
-4. **Eventos**: Ancla a sección de eventos próximos
-5. **Contacto**: Enlaces a Instagram y email
+### Páginas Disponibles
+1. **/ (Inicio)**: Página principal con toda la información clave del club
+2. **/nosotros**: Historia detallada, misión, visión y timeline
+3. **/inscripcion**: Formulario completo de inscripción al club
 
-### Llamados a la Acción (CTAs)
-- **Únete al Club**: Botón en Hero que lleva a página "Nosotros"
-- **Explora Rutas**: Botón que lleva a sección de rutas
-- **Síguenos en Instagram**: Link directo al perfil oficial
-- **Contáctanos**: Email directo para consultas
+### Secciones con Anclas
+- **#valores**: Sección de valores del club
+- **#rutas**: Información de rutas disponibles
+- **#calendario**: Calendario de actividades y rutas
+- **#contacto**: Información de contacto
 
 ---
 
@@ -256,32 +278,48 @@ El sitio es completamente estático con contenido generado en el servidor. No ha
 
 ---
 
+## 📝 Changelog de Actualizaciones
+
+### Versión 2.0 (Diciembre 2024) ✨
+- ✅ **Rediseño completo** con colores oficiales negro y rojo
+- ✅ **Logo oficial** integrado en navegación y footer
+- ✅ **Foto del equipo** añadida en galería y sección dedicada
+- ✅ **Formulario de inscripción** completo y funcional
+- ✅ **Calendario de rutas** con fechas específicas de Lebu
+- ✅ **Mejoras de diseño** profesional con bordes rojos y detalles
+- ✅ **Navegación actualizada** con enlace a inscripción
+
+### Versión 1.0 (Noviembre 2024)
+- ✅ Página principal con valores y rutas
+- ✅ Página "Nosotros" con historia
+- ✅ Diseño responsive
+- ✅ Integración con redes sociales
+
+---
+
 ## 📝 Próximos Pasos Recomendados
 
 ### Funcionalidades Pendientes
-1. **Formulario de Contacto**: Integración con servicio de email o Telegram
-2. **Sección de Galería Dinámica**: Integrar con Instagram API para mostrar últimas fotos
-3. **Calendario de Eventos**: Sistema dinámico de eventos con fechas actualizables
-4. **Blog/Noticias**: Sección para compartir crónicas de rutas y eventos
-5. **Sistema de Registro de Miembros**: Formulario para que nuevos ciclistas se inscriban
-6. **Mapa Interactivo**: Mostrar ubicaciones de rutas y puntos de encuentro
-7. **Página de Sponsors**: Reconocimiento a colaboradores y patrocinadores
-8. **Tienda Online**: Venta de merchandising del club (opcional)
-9. **Menú móvil funcional**: Implementar hamburger menu interactivo
+1. **Backend para formulario**: Integrar con servicio de email o base de datos
+2. **Galería Instagram**: Integrar API de Instagram para mostrar últimas fotos
+3. **Menú móvil**: Implementar hamburger menu funcional
+4. **Validación formulario**: JavaScript para validación en tiempo real
+5. **Confirmación de inscripción**: Página de agradecimiento
+6. **Sistema de notificaciones**: Avisos de nuevas rutas y eventos
+7. **Mapa interactivo**: Mostrar ubicaciones de rutas y puntos de encuentro
 
 ### Mejoras de SEO
-- [ ] Implementar meta tags Open Graph para redes sociales
-- [ ] Añadir Schema.org markup para organization y events
-- [ ] Crear sitemap.xml
-- [ ] Configurar robots.txt
-- [ ] Optimizar imágenes con lazy loading
-- [ ] Añadir analytics (Cloudflare Web Analytics o Google Analytics)
+- [ ] Meta tags Open Graph para redes sociales
+- [ ] Schema.org markup para organization y events
+- [ ] Sitemap.xml
+- [ ] Robots.txt
+- [ ] Analytics (Cloudflare Web Analytics)
 
-### Optimizaciones de Performance
-- [ ] Lazy loading de imágenes de galería
-- [ ] Minificación de CSS inline
-- [ ] Implementar Service Worker para PWA
-- [ ] Optimizar carga de fuentes con font-display: swap
+### Optimizaciones
+- [ ] Optimizar imágenes (WebP format)
+- [ ] Lazy loading de imágenes
+- [ ] Minificación CSS/JS
+- [ ] PWA capabilities
 
 ---
 
@@ -306,9 +344,9 @@ Contacto: contacto@leufumtb.cl
 
 ## 💪 Valores del Club
 
-- **Amistad**: Creamos vínculos genuinos más allá del ciclismo
-- **Superación**: Cada subida es un desafío, cada kilómetro una victoria
-- **Competición**: Preparación y apoyo para quienes buscan el podio
+- **Amistad** 🤝: Creamos vínculos genuinos más allá del ciclismo
+- **Superación** 🏆: Cada subida es un desafío, cada kilómetro una victoria
+- **Competición** 🥇: Preparación y apoyo para quienes buscan el podio
 
 ---
 
@@ -317,9 +355,10 @@ Contacto: contacto@leufumtb.cl
 **Lebu, Provincia de Arauco, Región del Biobío, Chile**
 
 Punto de encuentro: **Plaza de Lebu**  
-Horarios:
-- Sábados 8:00 AM - Ruta Local
-- Domingos 7:00 AM - Ruta Larga
+Horarios regulares:
+- Sábados 8:00 AM - Ruta Cerro Obligado
+- Domingos 7:00 AM - Ruta Larga Costa
+- Sábados 9:00 AM - Ruta Familiar Playa
 
 ---
 
@@ -331,6 +370,32 @@ Horarios:
 
 ---
 
+## 🎨 Paleta de Colores Oficial
+
+```css
+Negro Primario: #000000 (fondos principales)
+Negro Oscuro: #0a0a0a (variante)
+Gris Oscuro: #1f1f1f (secciones)
+Rojo Primario: #dc2626 (CTA, botones, énfasis)
+Rojo Secundario: #991b1b (hover, variante)
+Rojo Acento: #ef4444 (detalles, iconos)
+Blanco: #ffffff (texto sobre negro)
+Gris Claro: #f3f4f6 (fondos claros)
+```
+
+---
+
 **Hecho con ❤️ en Lebu, Chile**
 
 *"Donde el río, el mar y la montaña se unen pedaleando"*
+
+---
+
+## 🎯 Contacto del Proyecto
+
+**Desarrollador**: Disponible para consultas
+**Club**: Leufu MTB
+**Email**: contacto@leufumtb.cl
+**Instagram**: [@clubleufumtb](https://www.instagram.com/clubleufumtb/)
+
+**¿Quieres unirte?** 👉 [Inscríbete aquí](https://3000-io3iori8thgdpku06u2kw-c81df28e.sandbox.novita.ai/inscripcion)
