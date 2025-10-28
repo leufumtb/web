@@ -309,3 +309,14 @@ a, button {
     transform: rotate(360deg);
   }
 }
+
+/* Logo destacado en navegación */
+.nav-sticky img {
+  filter: drop-shadow(0 2px 8px rgba(220, 38, 38, 0.4));
+  transition: all 0.3s ease;
+}
+
+.nav-sticky img:hover {
+  filter: drop-shadow(0 4px 12px rgba(220, 38, 38, 0.6));
+  transform: scale(1.05);
+}

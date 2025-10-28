@@ -11,10 +11,10 @@ const Navigation = () => (
     <div class="container mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
         <div class="flex items-center space-x-3">
-          <img src="/images/logo.png" alt="Leufu MTB Logo" class="h-16 w-16 object-contain" />
+          <img src="/images/logo.png" alt="Leufu MTB Logo" class="h-20 w-20 object-contain" />
           <div>
             <h1 class="text-2xl font-montserrat font-bold">Leufu MTB</h1>
-            <p class="text-xs text-gray-300">Lebu, Arauco - Chile</p>
+            <p class="text-xs text-gray-300">Lebu, Región del Biobío, Chile</p>
           </div>
         </div>
         <div class="hidden md:flex space-x-6">
@@ -75,7 +75,7 @@ const Footer = () => (
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-center space-x-2">
               <i class="fas fa-map-marker-alt text-leufu-accent"></i>
-              <span>Lebu, Provincia de Arauco, Chile</span>
+              <span>Lebu, Región del Biobío, Chile</span>
             </li>
             <li class="flex items-center space-x-2">
               <i class="fas fa-envelope text-leufu-accent"></i>
@@ -104,10 +104,10 @@ app.get('/', (c) => {
       <Navigation />
       
       {/* Hero Section */}
-      <section class="hero-parallax relative h-screen flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?q=80&w=2070');">
+      <section class="hero-parallax relative h-screen flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070');">
         <div class="hero-overlay absolute inset-0"></div>
         <div class="relative z-10 text-center px-4 animate-fadeInUp">
-          <img src="/images/logo.png" alt="Leufu MTB" class="mx-auto mb-6 h-32 w-32 animate-fadeIn" />
+          <img src="/images/logo.png" alt="Leufu MTB" class="mx-auto mb-6 h-40 w-40 md:h-48 md:w-48 animate-fadeIn drop-shadow-2xl" />
           <h1 class="text-5xl md:text-7xl font-montserrat font-bold mb-6">
             Leufu MTB
           </h1>
@@ -115,7 +115,7 @@ app.get('/', (c) => {
             "Donde el río, el mar y la montaña se unen pedaleando"
           </p>
           <p class="text-lg md:text-xl mb-8">
-            Club de Ciclismo - Lebu, Arauco, Chile
+            Club de Ciclismo - Lebu, Región del Biobío, Chile
           </p>
           <div class="flex flex-col md:flex-row gap-4 justify-center">
             <a href="/inscripcion" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block text-white">
