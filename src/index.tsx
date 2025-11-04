@@ -297,7 +297,7 @@ app.get('/', (c) => {
           <div class="grid md:grid-cols-2 gap-8">
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border-2 border-transparent hover:border-leufu-accent">
               <img 
-                src="https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?q=80&w=2070" 
+                src="/images/rutas-lebu.jpg" 
                 alt="Rutas en Lebu"
                 class="w-full h-64 object-cover"
               />
@@ -542,9 +542,9 @@ app.get('/', (c) => {
 
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070" alt="MTB en sendero" />
+              <img src="/images/rutas-lebu.jpg" alt="Rutas Locales Lebu" />
               <div class="gallery-overlay">
-                <p class="text-white font-semibold">Senderos Técnicos</p>
+                <p class="text-white font-semibold">Rutas Locales</p>
               </div>
             </div>
             <div class="gallery-item">
