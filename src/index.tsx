@@ -17,13 +17,17 @@ const Navigation = () => (
             <p class="text-xs text-gray-300">Lebu, Región del Biobío, Chile</p>
           </div>
         </div>
-        <div class="hidden md:flex space-x-6">
+        <div class="hidden md:flex space-x-6 items-center">
           <a href="/" class="hover:text-leufu-accent font-medium transition-colors">Inicio</a>
           <a href="/nosotros" class="hover:text-leufu-accent font-medium transition-colors">Nosotros</a>
           <a href="/#rutas" class="hover:text-leufu-accent font-medium transition-colors">Rutas</a>
           <a href="/#calendario" class="hover:text-leufu-accent font-medium transition-colors">Calendario</a>
           <a href="/inscripcion" class="hover:text-leufu-accent font-medium transition-colors">Inscripción</a>
           <a href="/#contacto" class="hover:text-leufu-accent font-medium transition-colors">Contacto</a>
+          <a href="https://www.strava.com/clubs/1133016" target="_blank" rel="noopener noreferrer" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full font-semibold transition-all">
+            <i class="fab fa-strava mr-1"></i>
+            Strava
+          </a>
         </div>
         <button class="md:hidden text-2xl">
           <i class="fas fa-bars"></i>
@@ -585,6 +589,128 @@ app.get('/', (c) => {
             <i class="fas fa-map-marker-alt mr-2"></i>
             Nos reunimos todos los fines de semana en Plaza de Lebu
           </p>
+        </div>
+      </section>
+
+      {/* Sección Strava Club */}
+      <section class="py-20 bg-gradient-to-br from-orange-50 to-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <div class="inline-block bg-orange-500 text-white px-6 py-2 rounded-full text-sm font-bold mb-4">
+              <i class="fab fa-strava mr-2"></i>
+              CONECTA CON NOSOTROS
+            </div>
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-black mb-4">
+              Síguenos en Strava
+            </h2>
+            <div class="section-divider mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              Únete a nuestro club oficial en Strava y comparte tus rutas con <strong>23 miembros activos</strong>
+            </p>
+          </div>
+
+          <div class="max-w-5xl mx-auto">
+            {/* Stats del Club */}
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+              <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                <div class="text-4xl font-bold text-orange-500 mb-2">23</div>
+                <div class="text-gray-600 font-semibold">Miembros Activos</div>
+              </div>
+              <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                <div class="text-4xl font-bold text-leufu-primary mb-2">
+                  <i class="fas fa-route"></i>
+                </div>
+                <div class="text-gray-600 font-semibold">Rutas Compartidas</div>
+              </div>
+              <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                <div class="text-4xl font-bold text-leufu-secondary mb-2">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <div class="text-gray-600 font-semibold">Aventuras Épicas</div>
+              </div>
+            </div>
+
+            {/* Botón Prominente */}
+            <div class="text-center mb-12">
+              <a 
+                href="https://www.strava.com/clubs/1133016" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl hover:shadow-orange-300 transition-all transform hover:scale-105"
+              >
+                <i class="fab fa-strava mr-3 text-2xl"></i>
+                Únete al Club en Strava
+              </a>
+              <p class="mt-4 text-gray-600">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                Gratis • Ver rutas en vivo • Competir con amigos
+              </p>
+            </div>
+
+            {/* Widget de Strava Club */}
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-4">
+                <h3 class="text-xl font-bold">
+                  <i class="fab fa-strava mr-2"></i>
+                  Actividades Recientes del Club
+                </h3>
+              </div>
+              <div class="strava-embed-container">
+                <iframe 
+                  height='454' 
+                  width='100%' 
+                  frameborder='0' 
+                  allowtransparency='true' 
+                  scrolling='no' 
+                  src='https://www.strava.com/clubs/1133016/latest-rides/36f484d51d8c25a766d5f617bff97422bb4c3056'
+                  style="border: none;"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Beneficios de unirse */}
+            <div class="mt-12 grid md:grid-cols-2 gap-6">
+              <div class="flex items-start space-x-4">
+                <div class="bg-orange-100 text-orange-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-map-marked-alt text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-leufu-black mb-1">Descubre Nuevas Rutas</h4>
+                  <p class="text-gray-600 text-sm">Explora los recorridos de otros miembros y encuentra nuevas aventuras</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-orange-100 text-orange-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-trophy text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-leufu-black mb-1">Desafíos Mensuales</h4>
+                  <p class="text-gray-600 text-sm">Participa en retos del club y gana reconocimientos</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-orange-100 text-orange-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-chart-line text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-leufu-black mb-1">Sigue tu Progreso</h4>
+                  <p class="text-gray-600 text-sm">Registra tus entrenamientos y mejora cada día</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-orange-100 text-orange-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-users text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-leufu-black mb-1">Conecta con el Equipo</h4>
+                  <p class="text-gray-600 text-sm">Comenta, apoya y motiva a tus compañeros de pedal</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
