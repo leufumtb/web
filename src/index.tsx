@@ -326,7 +326,7 @@ app.get('/', (c) => {
 
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border-2 border-transparent hover:border-leufu-accent">
               <img 
-                src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=2141" 
+                src="/images/nahuelbuta.jpg" 
                 alt="Cordillera de Nahuelbuta"
                 class="w-full h-64 object-cover"
               />
@@ -560,9 +560,9 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1563624438-436a3b710bbb?q=80&w=2070" alt="MTB bosque" />
+              <img src="/images/nahuelbuta.jpg" alt="Cordillera de Nahuelbuta" />
               <div class="gallery-overlay">
-                <p class="text-white font-semibold">Bosque Nativo</p>
+                <p class="text-white font-semibold">Nahuelbuta Summit</p>
               </div>
             </div>
             <div class="gallery-item">
