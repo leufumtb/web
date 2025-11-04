@@ -104,7 +104,7 @@ app.get('/', (c) => {
       <Navigation />
       
       {/* Hero Section */}
-      <section class="hero-parallax relative h-screen flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070');">
+      <section class="hero-parallax relative h-screen flex items-center justify-center text-white" style="background-image: url('/images/hero-equipo.jpg');">
         <div class="hero-overlay absolute inset-0"></div>
         <div class="relative z-10 text-center px-4 animate-fadeInUp">
           <img src="/images/logo.png" alt="Leufu MTB" class="mx-auto mb-6 h-40 w-40 md:h-48 md:w-48 animate-fadeIn drop-shadow-2xl" />
