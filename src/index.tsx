@@ -369,94 +369,74 @@ app.get('/', (c) => {
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {/* Evento 1: Salidas Semanales */}
             <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
               <div class="flex items-center justify-between mb-4">
                 <div class="bg-leufu-primary text-white px-4 py-2 rounded-lg font-bold">
-                  SÁBADO
+                  MIÉRCOLES
                 </div>
-                <div class="text-2xl font-bold text-leufu-primary">8:00 AM</div>
+                <div class="text-2xl font-bold text-leufu-primary">18:30</div>
               </div>
-              <h3 class="text-xl font-montserrat font-bold mb-2">Ruta Cerro Obligado</h3>
-              <p class="text-gray-600 mb-4">Salida técnica por senderos locales. Nivel: Intermedio</p>
+              <h3 class="text-xl font-montserrat font-bold mb-2">Salidas Semanales</h3>
+              <p class="text-gray-600 mb-4">Rutas por lugares turísticos de Lebu</p>
               <div class="flex items-center text-sm text-gray-600">
-                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
-                <span>Punto de encuentro: Plaza de Lebu</span>
+                <i class="fas fa-calendar-week text-leufu-primary mr-2"></i>
+                <span>Todos los miércoles</span>
               </div>
             </div>
 
-            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
-              <div class="flex items-center justify-between mb-4">
-                <div class="bg-leufu-primary text-white px-4 py-2 rounded-lg font-bold">
-                  DOMINGO
-                </div>
-                <div class="text-2xl font-bold text-leufu-primary">7:00 AM</div>
-              </div>
-              <h3 class="text-xl font-montserrat font-bold mb-2">Ruta Larga Costa</h3>
-              <p class="text-gray-600 mb-4">70km por la costa. Vistas al mar. Nivel: Avanzado</p>
-              <div class="flex items-center text-sm text-gray-600">
-                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
-                <span>Punto de encuentro: Plaza de Lebu</span>
-              </div>
-            </div>
-
+            {/* Evento 2: Raid Laraquete */}
             <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
               <div class="flex items-center justify-between mb-4">
                 <div class="bg-leufu-secondary text-white px-4 py-2 rounded-lg font-bold">
-                  15 DIC
+                  30 NOV
                 </div>
-                <div class="text-2xl font-bold text-leufu-secondary">6:00 AM</div>
+                <div class="text-2xl font-bold text-leufu-secondary">
+                  <i class="fas fa-flag-checkered"></i>
+                </div>
               </div>
-              <h3 class="text-xl font-montserrat font-bold mb-2">Piedra del Águila</h3>
-              <p class="text-gray-600 mb-4">Expedición a Nahuelbuta. Nivel: Experto</p>
+              <h3 class="text-xl font-montserrat font-bold mb-2">RAID</h3>
+              <p class="text-gray-600 mb-4">Competencia en Laraquete</p>
               <div class="flex items-center text-sm text-gray-600">
                 <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
-                <span>Salida desde Lebu (transporte coordinado)</span>
+                <span>Laraquete</span>
               </div>
             </div>
 
+            {/* Evento 3: Leufu Kid */}
             <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
               <div class="flex items-center justify-between mb-4">
                 <div class="bg-leufu-accent text-white px-4 py-2 rounded-lg font-bold">
-                  SÁBADO
+                  13 DIC
                 </div>
-                <div class="text-2xl font-bold text-leufu-accent">9:00 AM</div>
+                <div class="text-2xl font-bold text-leufu-accent">
+                  <i class="fas fa-child"></i>
+                </div>
               </div>
-              <h3 class="text-xl font-montserrat font-bold mb-2">Ruta Familiar Playa</h3>
-              <p class="text-gray-600 mb-4">25km suave para toda la familia. Nivel: Principiante</p>
+              <h3 class="text-xl font-montserrat font-bold mb-2">LEUFU KID</h3>
+              <p class="text-gray-600 mb-4">Evento especial para niños</p>
               <div class="flex items-center text-sm text-gray-600">
                 <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
-                <span>Punto de encuentro: Plaza de Lebu</span>
+                <span>Lebu - Cerro Amalia</span>
               </div>
             </div>
 
-            <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
-              <div class="flex items-center justify-between mb-4">
-                <div class="bg-leufu-primary text-white px-4 py-2 rounded-lg font-bold">
-                  DOM 1
-                </div>
-                <div class="text-2xl font-bold text-leufu-primary">8:00 AM</div>
-              </div>
-              <h3 class="text-xl font-montserrat font-bold mb-2">Mantención de Senderos</h3>
-              <p class="text-gray-600 mb-4">Jornada comunitaria + asado final</p>
-              <div class="flex items-center text-sm text-gray-600">
-                <i class="fas fa-tools text-leufu-primary mr-2"></i>
-                <span>Primer domingo de cada mes</span>
-              </div>
-            </div>
-
+            {/* Evento 4: Raid Final */}
             <div class="bg-white text-leufu-black rounded-xl p-6 shadow-xl card-hover">
               <div class="flex items-center justify-between mb-4">
                 <div class="bg-leufu-secondary text-white px-4 py-2 rounded-lg font-bold">
-                  22 DIC
+                  21 DIC
                 </div>
-                <div class="text-2xl font-bold text-leufu-secondary">8:00 AM</div>
+                <div class="text-2xl font-bold text-leufu-secondary">
+                  <i class="fas fa-trophy"></i>
+                </div>
               </div>
-              <h3 class="text-xl font-montserrat font-bold mb-2">Cierre de Temporada</h3>
-              <p class="text-gray-600 mb-4">Ruta especial + celebración del club</p>
+              <h3 class="text-xl font-montserrat font-bold mb-2">RAID - FECHA FINAL</h3>
+              <p class="text-gray-600 mb-4">Cierre de temporada</p>
               <div class="flex items-center text-sm text-gray-600">
-                <i class="fas fa-star text-leufu-accent mr-2"></i>
-                <span>Evento especial del club</span>
+                <i class="fas fa-map-marker-alt text-leufu-primary mr-2"></i>
+                <span>Curanilahue</span>
               </div>
             </div>
           </div>
