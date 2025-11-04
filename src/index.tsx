@@ -566,7 +566,7 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1549391310-10c5e33b6f8e?q=80&w=2070" alt="Competición" />
+              <img src="/images/competicion.jpg" alt="Competición" />
               <div class="gallery-overlay">
                 <p class="text-white font-semibold">Día de Carrera</p>
               </div>
