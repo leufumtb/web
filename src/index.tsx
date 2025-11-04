@@ -647,25 +647,45 @@ app.get('/', (c) => {
               </p>
             </div>
 
-            {/* Widget de Strava Club */}
-            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-              <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-4">
-                <h3 class="text-xl font-bold">
-                  <i class="fab fa-strava mr-2"></i>
-                  Actividades Recientes del Club
+            {/* Tarjeta Visual de Strava */}
+            <div class="bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl shadow-2xl overflow-hidden p-12 text-white text-center">
+              <div class="mb-8">
+                <i class="fab fa-strava text-8xl mb-6 animate-pulse"></i>
+                <h3 class="text-3xl md:text-4xl font-montserrat font-bold mb-4">
+                  ¡Únete a Nuestra Comunidad!
                 </h3>
+                <p class="text-xl mb-8 opacity-90">
+                  Sigue nuestras rutas, comparte tus logros y conecta con 23 ciclistas como tú
+                </p>
               </div>
-              <div class="strava-embed-container">
-                <iframe 
-                  height='454' 
-                  width='100%' 
-                  frameborder='0' 
-                  allowtransparency='true' 
-                  scrolling='no' 
-                  src='https://www.strava.com/clubs/1133016/latest-rides/36f484d51d8c25a766d5f617bff97422bb4c3056'
-                  style="border: none;"
-                ></iframe>
+
+              <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                  <i class="fas fa-users text-4xl mb-3"></i>
+                  <div class="text-2xl font-bold">23+</div>
+                  <div class="text-sm opacity-90">Ciclistas Activos</div>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                  <i class="fas fa-map-marked-alt text-4xl mb-3"></i>
+                  <div class="text-2xl font-bold">100+</div>
+                  <div class="text-sm opacity-90">Rutas Registradas</div>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                  <i class="fas fa-trophy text-4xl mb-3"></i>
+                  <div class="text-2xl font-bold">∞</div>
+                  <div class="text-sm opacity-90">Momentos Épicos</div>
+                </div>
               </div>
+
+              <a 
+                href="https://www.strava.com/clubs/1133016" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-block bg-white text-orange-600 px-10 py-4 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl transition-all transform hover:scale-110"
+              >
+                <i class="fab fa-strava mr-2"></i>
+                Ver Actividades en Vivo
+              </a>
             </div>
 
             {/* Beneficios de unirse */}
