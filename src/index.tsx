@@ -114,7 +114,7 @@ app.get('/', (c) => {
             {/* Lado izquierdo: Imagen promocional */}
             <div class="order-2 md:order-1">
               <img 
-                src="https://page.gensparksite.com/v1/base64_upload/33aae455766d4194272e080bcefbeb2euser" 
+                src="/images/leufu-kid-promo.jpg" 
                 alt="2do Desafío Ciclismo Infantil Leufu 2025" 
                 class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
               />
