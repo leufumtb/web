@@ -23,6 +23,13 @@ Sitio web oficial del Club de Ciclismo **Leufu MTB**, ubicado en Lebu, Provincia
 ## ✨ Características Implementadas
 
 ### 🏠 Página Principal (Home)
+- **🎉 Banner Promocional LEUFU KID 2025**: Banner destacado en la parte superior con:
+  - Imagen promocional oficial del evento
+  - Información completa del 2º Desafío de Ciclismo Infantil
+  - Categorías: Mini riders (2-3 años), Peques (4-5 años), Pre-infantil (6-7 años), Infantil (8-9 años), Junior (10-11 años), Juveniles (12-13 años)
+  - Botón directo a Instagram para inscripción
+  - Enlace para descargar bases PDF del evento
+  - Fecha: Diciembre 2025 en Lebu
 - **Hero Section**: Banner con logo oficial, imagen parallax y eslogan motivador
 - **Contador de Estadísticas**: Miembros activos, rutas exploradas, eventos y años de historia
 - **Sección Valores**: Presentación de los tres pilares fundamentales con colores negro/rojo:
@@ -279,6 +286,12 @@ El sitio es completamente estático con contenido generado en el servidor. El fo
 ---
 
 ## 📝 Changelog de Actualizaciones
+
+### Versión 2.1 (Noviembre 2024) 🎉
+- ✅ **Banner Promocional LEUFU KID 2025** para el 2º Desafío de Ciclismo Infantil
+- ✅ **Descarga de Bases PDF** integrada en el sitio web
+- ✅ **Enlace directo a Instagram** para inscripciones del evento infantil
+- ✅ **6 Categorías** completamente detalladas (2-13 años)
 
 ### Versión 2.0 (Diciembre 2024) ✨
 - ✅ **Rediseño completo** con colores oficiales negro y rojo
