@@ -107,6 +107,86 @@ app.get('/', (c) => {
     <div>
       <Navigation />
       
+      {/* Banner Promocional LEUFU KID - Clickeable para inscripción */}
+      <section class="relative overflow-hidden bg-gradient-to-br from-blue-400 via-cyan-300 to-blue-500 shadow-2xl">
+        <div class="container mx-auto px-4 py-6 relative z-10">
+          <div class="grid md:grid-cols-2 gap-6 items-center">
+            {/* Lado izquierdo: Imagen promocional */}
+            <div class="order-2 md:order-1">
+              <img 
+                src="https://page.gensparksite.com/v1/base64_upload/33aae455766d4194272e080bcefbeb2euser" 
+                alt="2do Desafío Ciclismo Infantil Leufu 2025" 
+                class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            
+            {/* Lado derecho: Información y botones */}
+            <div class="order-1 md:order-2 text-center md:text-left">
+              <div class="bg-yellow-400 text-leufu-black inline-block px-6 py-2 rounded-full font-bold text-sm mb-4 animate-pulse">
+                🎉 ¡EVENTO ESPECIAL 2025!
+              </div>
+              <h2 class="text-4xl md:text-5xl font-montserrat font-black text-white mb-4 drop-shadow-lg">
+                2º DESAFÍO<br/>CICLISMO INFANTIL
+              </h2>
+              <div class="bg-white/90 backdrop-blur-sm rounded-xl p-6 mb-6 shadow-xl">
+                <p class="text-2xl font-bold text-leufu-primary mb-2">
+                  <i class="fas fa-calendar-alt mr-2"></i>
+                  DICIEMBRE 2025
+                </p>
+                <p class="text-lg text-gray-700 mb-3">
+                  <i class="fas fa-map-marker-alt mr-2 text-leufu-accent"></i>
+                  Lebu, Región del Biobío
+                </p>
+                <div class="border-t border-gray-300 pt-3 mt-3">
+                  <p class="text-sm font-semibold text-gray-600 mb-2">📋 CATEGORÍAS:</p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-gray-700">
+                    <div>• Mini riders (2-3 años)</div>
+                    <div>• Peques (4-5 años)</div>
+                    <div>• Pre-infantil (6-7 años)</div>
+                    <div>• Infantil (8-9 años)</div>
+                    <div>• Junior (10-11 años)</div>
+                    <div>• Juveniles (12-13 años)</div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Botones de acción */}
+              <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a 
+                  href="https://www.instagram.com/clubleufumtb/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-600 hover:from-pink-600 hover:via-purple-600 hover:to-pink-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-2xl transform hover:scale-110 transition-all duration-300 flex items-center justify-center gap-2"
+                >
+                  <i class="fab fa-instagram text-2xl"></i>
+                  INSCRÍBETE EN INSTAGRAM
+                </a>
+                <a 
+                  href="/bases-leufu-kid-2025.pdf" 
+                  target="_blank"
+                  class="bg-white hover:bg-gray-100 text-leufu-black px-8 py-4 rounded-full font-bold text-lg shadow-xl transform hover:scale-110 transition-all duration-300 flex items-center justify-center gap-2 border-4 border-yellow-400"
+                >
+                  <i class="fas fa-download text-xl"></i>
+                  DESCARGAR BASES
+                </a>
+              </div>
+              
+              <p class="text-white text-sm mt-4 font-semibold drop-shadow">
+                ¡PRONTO MÁS INFO! 🚴‍♂️ Organiza: Leufu MTB
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Decoración con íconos animados */}
+        <div class="absolute top-4 right-4 text-white text-6xl opacity-20 animate-bounce">
+          <i class="fas fa-child"></i>
+        </div>
+        <div class="absolute bottom-4 left-4 text-white text-5xl opacity-20 animate-pulse">
+          <i class="fas fa-bicycle"></i>
+        </div>
+      </section>
+      
       {/* Hero Section */}
       <section class="hero-parallax relative h-screen flex items-center justify-center text-white" style="background-image: url('/images/hero-equipo.jpg');">
         <div class="hero-overlay absolute inset-0"></div>
