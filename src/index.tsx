@@ -610,7 +610,7 @@ app.get('/', (c) => {
           <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div class="order-2 md:order-1">
               <img 
-                src="https://drive.google.com/thumbnail?id=10bHPL247B6sXiw85EdIGgbX3LPBQ5CN7&sz=w2000" 
+                src="https://drive.google.com/thumbnail?id=1bQrDuABWBWHp9Seogj7EWXL8IuGBw4gx&sz=w2000" 
                 alt="LEUFU KID - Niños ciclistas del club"
                 class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
               />
@@ -699,7 +699,7 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://drive.google.com/thumbnail?id=1bQrDuABWBWHp9Seogj7EWXL8IuGBw4gx&sz=w2000" alt="Grupo de ciclistas Leufu MTB" />
+              <img src="https://drive.google.com/thumbnail?id=10bHPL247B6sXiw85EdIGgbX3LPBQ5CN7&sz=w2000" alt="Grupo de ciclistas Leufu MTB" />
               <div class="gallery-overlay">
                 <p class="text-white font-semibold">Grupo en Acción</p>
               </div>
