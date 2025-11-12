@@ -264,7 +264,7 @@ app.get('/', (c) => {
               <h3 class="text-2xl font-montserrat font-bold text-leufu-black mb-4">Amistad</h3>
               <p class="text-gray-700 leading-relaxed">
                 Creamos vínculos genuinos más allá del ciclismo. Cada ruta es una oportunidad para conocernos, 
-                apoyarnos y construir una familia sobre ruedas.
+                apoyarnos y construir un team sobre ruedas.
               </p>
             </div>
 
@@ -302,7 +302,7 @@ app.get('/', (c) => {
                 Nuestro Equipo
               </h2>
               <p class="text-lg leading-relaxed mb-6">
-                Somos más que un club, <strong class="text-leufu-accent">somos una familia unida por la pasión del ciclismo</strong>. 
+                Somos más que un club, <strong class="text-leufu-accent">somos un team unido por la pasión del ciclismo</strong>. 
                 Desde principiantes hasta competidores experimentados, todos compartimos el mismo amor por los senderos de Lebu.
               </p>
               <p class="text-lg leading-relaxed mb-6">
@@ -653,7 +653,7 @@ app.get('/', (c) => {
           </h2>
           <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
             No importa tu nivel, tu edad o tu experiencia. En Leufu MTB hay un lugar para ti. 
-            Da el primer paso y descubre por qué somos más que un club: <strong>somos familia</strong>.
+            Da el primer paso y descubre por qué somos más que un club: <strong>somos un team</strong>.
           </p>
           <div class="flex flex-col md:flex-row gap-4 justify-center">
             <a href="/inscripcion" class="bg-white text-leufu-primary px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100">
@@ -833,7 +833,7 @@ app.get('/inscripcion', (c) => {
             Únete a Leufu MTB
           </h1>
           <p class="text-xl md:text-2xl">
-            Completa el formulario y sé parte de nuestra familia
+            Completa el formulario y sé parte de nuestro team
           </p>
         </div>
       </section>
@@ -1235,7 +1235,7 @@ app.get('/nosotros', (c) => {
                 </h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
                   No solo pedaleamos juntos, también compartimos asados, celebramos cumpleaños, apoyamos en momentos difíciles 
-                  y construimos <strong>amistades que trascienden el ciclismo</strong>. Somos una familia sobre ruedas.
+                  y construimos <strong>amistades que trascienden el ciclismo</strong>. Somos un team sobre ruedas.
                 </p>
               </div>
             </div>
