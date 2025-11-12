@@ -341,8 +341,8 @@ app.get('/', (c) => {
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="order-2 md:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=2070" 
-                alt="Vista al mar desde senderos de Lebu"
+                src="https://www.genspark.ai/api/files/s/nslq2Qlc" 
+                alt="Senderos de Lebu MTB - Grupo ciclistas por la costa"
                 class="rounded-2xl shadow-2xl"
               />
             </div>
@@ -591,6 +591,93 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      {/* Sección LEUFU KID - Rama Infantil */}
+      <section class="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-full font-bold text-sm mb-4">
+              🚴‍♂️ RAMA INFANTIL
+            </div>
+            <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-leufu-black mb-4">
+              LEUFU KID
+            </h2>
+            <div class="section-divider mb-6"></div>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+              Fomentando el amor por el ciclismo desde temprana edad
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div class="order-2 md:order-1">
+              <img 
+                src="https://www.genspark.ai/api/files/s/o51xnFq0" 
+                alt="LEUFU KID - Niños ciclistas del club"
+                class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+
+            <div class="order-1 md:order-2">
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="bg-yellow-400 text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-child text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-leufu-black mb-2">Iniciación Temprana</h3>
+                    <p class="text-gray-700">
+                      Desde los 2 años, los niños pueden comenzar su aventura en el ciclismo con nuestro programa especial.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="bg-orange-400 text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-users text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-leufu-black mb-2">Desarrollo Integral</h3>
+                    <p class="text-gray-700">
+                      Más que pedalear: desarrollamos habilidades motrices, trabajo en equipo y valores deportivos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="bg-red-400 text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-trophy text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-leufu-black mb-2">Eventos Especiales</h3>
+                    <p class="text-gray-700">
+                      Organizamos carreras y desafíos adaptados para cada categoría de edad, fomentando la competencia sana.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-leufu-primary to-leufu-secondary text-white p-6 rounded-xl mt-6">
+                  <h4 class="font-bold text-lg mb-2">📋 Categorías LEUFU KID:</h4>
+                  <div class="grid grid-cols-2 gap-2 text-sm">
+                    <div>• Mini riders (2-3 años)</div>
+                    <div>• Peques (4-5 años)</div>
+                    <div>• Pre-infantil (6-7 años)</div>
+                    <div>• Infantil (8-9 años)</div>
+                    <div>• Junior (10-11 años)</div>
+                    <div>• Juveniles (12-13 años)</div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-8">
+                  <a href="/inscripcion" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block text-white">
+                    <i class="fas fa-user-plus mr-2"></i>
+                    Inscribe a tu Hijo/a
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Galería */}
       <section class="py-20 bg-leufu-light">
         <div class="container mx-auto px-4">
@@ -612,9 +699,9 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?q=80&w=2070" alt="Vista al mar" />
+              <img src="https://www.genspark.ai/api/files/s/7YKtaNaM" alt="Grupo de ciclistas Leufu MTB" />
               <div class="gallery-overlay">
-                <p class="text-white font-semibold">Descenso al Mar</p>
+                <p class="text-white font-semibold">Grupo en Acción</p>
               </div>
             </div>
             <div class="gallery-item">
