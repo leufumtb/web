@@ -341,7 +341,7 @@ app.get('/', (c) => {
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="order-2 md:order-1">
               <img 
-                src="https://www.genspark.ai/api/files/s/nslq2Qlc" 
+                src="https://www.genspark.ai/api/files/s/58myl0Uz" 
                 alt="Senderos de Lebu MTB - Grupo ciclistas por la costa"
                 class="rounded-2xl shadow-2xl"
               />
@@ -610,7 +610,7 @@ app.get('/', (c) => {
           <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div class="order-2 md:order-1">
               <img 
-                src="https://www.genspark.ai/api/files/s/o51xnFq0" 
+                src="https://www.genspark.ai/api/files/s/Ja4npDt7" 
                 alt="LEUFU KID - Niños ciclistas del club"
                 class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
               />
@@ -699,7 +699,7 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://www.genspark.ai/api/files/s/7YKtaNaM" alt="Grupo de ciclistas Leufu MTB" />
+              <img src="https://www.genspark.ai/api/files/s/GLa01tF0" alt="Grupo de ciclistas Leufu MTB" />
               <div class="gallery-overlay">
                 <p class="text-white font-semibold">Grupo en Acción</p>
               </div>
