@@ -34,3 +34,6 @@ wrangler.toml.backup
 # OS
 .DS_Store
 Thumbs.db
+
+# Temporary files
+index_formatted.html
